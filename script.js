@@ -58,7 +58,7 @@ function submit() {
         //send ballot over AJAX to vote_counting.py
         $.ajax({
             type    : "POST",
-            url     : '../voteCounting.js',
+            url     : 'https://j-wyz.github.io/savejson.php',
             data    : {'ballot': candidateList()},
             success : function( response ) {
                 alert( response );
