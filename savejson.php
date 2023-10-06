@@ -1,5 +1,4 @@
 <?php
-    $data = json_decode($_POST['data'], true);
-    $ballot = $data['ballot'];
+    $ballot = $_POST['ballot'];
     echo $ballot;
 ?>
