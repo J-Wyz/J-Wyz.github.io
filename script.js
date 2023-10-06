@@ -67,12 +67,11 @@ function submit() {
                 alert("error")
             }
         });
-
-        bakeCookie("BIMNHasVoted", "yes", 30)
         for (let i=0; i<5; i++) {
             document.getElementsByClassName("Selection")[i].value = "0"
             document.getElementsByClassName("Selection")[i].setAttribute("disabled", "true")
         } 
+        bakeCookie("BIMNHasVoted", "yes", 30)
         }
 }
 //add event listeners for submit button
