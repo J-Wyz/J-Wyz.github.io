@@ -1,6 +1,5 @@
 <?php
-    $fp = fopen('ballots.json', 'w');
-    fwrite($fp, json_encode($_POST['ballot']));
-    fclose($fp);
-    echo "success";
+    $data = json_decode($_POST['data'], true);
+    $ballot = $data['ballot'];
+    echo $ballot;
 ?>
